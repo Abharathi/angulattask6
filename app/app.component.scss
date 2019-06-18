@@ -1,0 +1,30 @@
+body{
+    text-align: center;
+    //display: inline;
+    background-color: aquamarine;
+}
+table,th,td{
+    border: 1px solid black;
+    padding: 5px;
+}
+table{
+    border-collapse: collapse;
+}
+td{
+    height: 10px;
+}
+table{
+
+    margin-left: 30%;
+}
+.right{
+    overflow: hidden;
+    width: 15%;
+}
+.left{
+    float: left;
+    //overflow: hidden;
+    width: 35%;
+    margin-left: 25%;
+}
+

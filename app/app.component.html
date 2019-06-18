@@ -1,0 +1,29 @@
+<html>
+  <head></head>
+  <body>
+    <h1>Store</h1>
+    <div class="left">
+    <table>
+      <caption>catalog</caption>
+      <tr *ngFor='let item of items'>
+        <td>item:{{item.product}}<br> Rs{{item.price}} <button (click)="add(item)">Add to cart</button></td>
+      </tr>
+    </table>
+    </div>
+    <div class="right">
+      <table>
+          <caption>cart</caption>
+          <tr *ngFor="let item of cart;let i=index">
+            <td>item:{{item.product}}<br>Rs-{{item.price}}<button (click)="remove(i,item)">remove</button></td>
+            </tr>
+      </table>
+    </div><br><br>
+
+        <table>
+            <caption>Check Out</caption>
+            <tr>
+              <td>order total:{{n}}<br><button (click)="place($event)">place order</button></td>
+            </tr>
+        </table>
+  </body>
+</html>
